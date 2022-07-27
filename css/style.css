@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: mamelon,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    background-color: #F5F5F5;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 422px 0 230px;
+}
+
+.title {
+    width: auto;
+    height: 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+.cont-nav {
+    display: flex;
+    max-width: 1384px;
+    justify-content: space-between;
+    margin: 0 auto  ;
+    padding: 216px 0 120px;
+}
+
+.cont-list {
+    max-width: 232px;
+    will-change: transform;
+}
+
+.contents a,
+.cont-list img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.contents a:hover,
+.cont-list img:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+.contents {
+    max-width: 1192px;
+    display: flex;
+    margin: 0 auto;
+    padding: 263px 0;
+}
+
+.contents h2 {
+    font-size: 36px;
+}
+
+.contents p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+.contents:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.contents img{
+    width: 596px;
+    height: 410px;
+}
+
+.caption {
+    padding: 33px 56px 0 56px;
+}
+
+.caption p {
+    margin-top: 54px;
+}
+
+.prof {
+    margin: 0 auto;
+    padding: 187px 0 283px;    
+    width: 300px;
+    text-align: center;
+}
+
+.prof a{
+    color: #000;
+}
+
+.prof h2 {
+    margin: 40px 0 24px;
+}
+
+.prof p {
+    margin: 0 0 42px;
+}
+
+.balloon {
+    max-width: 400px;
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #252525;
+    border-radius: 20px;
+    display: none;
+}
+
+.balloon::before {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-top: 12px solid #F5F5F5;
+    z-index: 2;
+}
+
+.balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #252525;
+    z-index: 1;
+}
+
+/* .top_hover:hover > .balloon{
+    display: block;
+} */
+
+.balloon p {
+    margin: 0;
+    padding: 0;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: center;
+}
+
+.sns-list a:first-child {
+    margin-right: 18px;
+}
